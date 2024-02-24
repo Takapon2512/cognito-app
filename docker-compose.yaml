@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  api:
+    image: cognito-api-image
+    container_name: cognito-api-container
+    build: 
+      context: .
+    ports:
+      - "8000:8000"
